@@ -1,0 +1,38 @@
+.container{
+    padding: 60px 40px 90px;
+    width: calc(100% - 80px);
+    background: var(--primary);
+}
+.content{
+    width: calc(100% - 40px);
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text{
+    width: fit-content;
+}
+.text p{
+    padding: 10px;
+    color: white;
+    font-weight: 300;
+}
+.content img{
+    height: 90px;
+    width: auto;
+}
+.container > p{
+    text-align: center;
+    font-size: 13px;
+    padding: 4px 0px 12px;
+    position: absolute;
+    bottom: 0px;
+    background: white;
+    width: 100%;
+    left: 0px;
+}
+.container a{
+    color: white;
+}

@@ -1,0 +1,23 @@
+.darkDetails{
+    width: calc(100% - 40px);
+    max-width: 1400px;
+    margin: 20px auto 100px;
+    display: block;
+}
+.white{
+    background: white;
+}
+.triplePicture{
+    max-width: 1200px;
+    display: flex;
+    width: calc(100% - 40px);
+    justify-content: space-between;
+    margin: auto;
+    padding: 50px 0px 20px;
+}
+.imageLabel{
+    text-align: center;
+    font-weight: 100;
+    font-size: 13px;
+    padding-bottom: 50px;
+}

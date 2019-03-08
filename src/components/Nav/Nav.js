@@ -19,28 +19,52 @@ class Nav extends Component {
             {
                 title: "WHO WE ARE",
                 url: "who-we-are",
-                options: [
-                    {
-                        title: "Protective Security and Planning",
-                        url: "/services/protective-security-and-planning"
-                    },
-                    {
-                        title: "Electricity and Security Enginering",
-                        url: "/services/electricity-and-security-engineering"
-                    },
-                    {
-                        title: "Project Functions",
-                        url: "/services/project-functions"
-                    },
-                    {
-                        title: "Service and Maintenance",
-                        url: "/services/service-and-maintenance"
-                    },
-                ]
             },
             {
                 title: "WHAT WE DO",
-                url: "what-we-do"
+                url: "what-we-do",
+                options: [
+                    {
+                        title: "Environmental protection",
+                        url: "/pages/environmenta-protection"
+                    },
+                    {
+                        title: "Safety protection",
+                        url: "/what-we-do/safety-protection"
+                    },
+                    {
+                        title: "Physical security",
+                        url: "/what-we-do/physical-security"
+                    },
+                    {
+                        title: "Transport",
+                        url: "/what-we-do/transport"
+                    },
+                    {
+                        title: "Record-keeping",
+                        url: "/what-we-do/record-keeping"
+                    },
+                    {
+                        title: "Marking",
+                        url: "/what-we-do/marking"
+                    },
+                    {
+                        title: "Storage",
+                        url: "/what-we-do/storage"
+                    },
+                    {
+                        title: "Lifetime assessment",
+                        url: "/what-we-do/lifetime-assessment"
+                    },
+                    {
+                        title: "Destruction",
+                        url: "/what-we-do/destruction"
+                    },
+                    {
+                        title: "Management",
+                        url: "/what-we-do/management"
+                    },
+                ]
             },
             {
                 title: "CONTACT",
@@ -61,19 +85,21 @@ class Nav extends Component {
         let lan = this.urls[this.props.lan]
         return (
             <div className={ [classes.container, (this.state.open ? classes.open : "")].join(" ") }>
-                <Link to="/" className={ classes.img }>
-                    <img src={ logo_dark } alt="Logo" title="Logo" className={ classes.logo }/>
-                </Link>
-                <div className={ classes.menu }>
-                    {
-                        lan.map((it, index) => it.options 
-                            ? <NavDropdown { ...it } key={ index }/> 
-                            : <Link activeClassName={ classes.active } to={ it.url } key={ index }>{ it.title }</Link> 
-                        )
-                    }
+                <div className={ classes.content }>
+                    <Link to="/" className={ classes.img }>
+                        <img src={ logo_dark } alt="Logo" title="Logo" className={ classes.logo }/>
+                    </Link>
+                    <div className={ classes.menu }>
+                        {
+                            lan.map((it, index) => it.options 
+                                ? <NavDropdown { ...it } key={ index }/> 
+                                : <Link activeClassName={ classes.active } to={ it.url } key={ index }>{ it.title }</Link> 
+                            )
+                        }
+                    </div>
+                    <img src={ close } alt="close" className={ classes.close } onClick={ this.closeMenu }/>
+                    <img src={ menu } alt="close" className={ classes.menuButton } onClick={ this.openMenu }/>
                 </div>
-                <img src={ close } alt="close" className={ classes.close } onClick={ this.closeMenu }/>
-                <img src={ menu } alt="close" className={ classes.menuButton } onClick={ this.openMenu }/>
             </div>
         )
     }

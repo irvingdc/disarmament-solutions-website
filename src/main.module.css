@@ -3,7 +3,9 @@
 :root{
     --primary: #32585c;
     --secondary: #333333;
-    --tertiary: #eeeeee;
+    --tertiary: #f8f8f8;
+    --gray: #6e6e6e;
+    --light-gray: #eeeeee;
 }
 
 @font-face {
@@ -12,23 +14,35 @@
     font-weight: normal;
     src: local('Helvetica'), url('./fonts/Helvetica.woff') format('woff');
 }
-    
 @font-face {
-    font-family: 'Helvetica Oblique';
+    font-family: 'Helvetica';
     font-style: normal;
+    font-weight: 100;
+    src: local('Helvetica Light'), url('./fonts/helvetica-light-587ebe5a59211.woff') format('woff');
+}
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Helvetica Rounded Bold'), url('./fonts/helvetica-rounded-bold-5871d05ead8de.woff') format('woff');
+}
+    /*
+@font-face {
+    font-family: 'Helvetica';
+    font-style: italic;
     font-weight: normal;
     src: local('Helvetica Oblique'), url('./fonts/Helvetica-Oblique.woff') format('woff');
 }
     
 @font-face {
-    font-family: 'Helvetica Compressed';
+    font-family: 'Helvetica';
     font-style: normal;
     font-weight: normal;
     src: local('Helvetica Compressed'), url('./fonts/helvetica-compressed-5871d14b6903a.woff') format('woff');
 }
     
 @font-face {
-    font-family: 'Helvetica Rounded Bold';
+    font-family: 'Helvetica';
     font-style: normal;
     font-weight: normal;
     src: local('Helvetica Rounded Bold'), url('./fonts/helvetica-rounded-bold-5871d05ead8de.woff') format('woff');
@@ -37,23 +51,23 @@
 @font-face {
     font-family: 'Helvetica';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 900;
     src: local('Helvetica'), url('./fonts/Helvetica-Bold.woff') format('woff');
 }
     
 @font-face {
-    font-family: 'Helvetica Bold Oblique';
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'Helvetica';
+    font-style: italic;
+    font-weight: 900;
     src: local('Helvetica Bold Oblique'), url('./fonts/Helvetica-BoldOblique.woff') format('woff');
 }
         
 @font-face {
-    font-family: 'Helvetica Light';
+    font-family: 'Helvetica';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 100;
     src: local('Helvetica Light'), url('./fonts/helvetica-light-587ebe5a59211.woff') format('woff');
-}
+}*/
 
 @font-face {
     font-family: 'Impact';
@@ -63,8 +77,8 @@
 }
 
 body, html{
-	background: var(--dark);
-	font-family: Helvetica, Arial, sans-serif;
+	background: var(--tertiary);
+	font-family: Helvetica, sans-serif;
 	font-weight: 500;
     margin: 0;
     padding: 0;
@@ -74,12 +88,12 @@ p,h1,h2,h3,h4,h5{
     margin: 0;
     padding: 0;
     color: var(--secondary);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 h1,h2,h3,h4,h5,p b{
     color: var(--primary);
-    font-family: Impact, 'Arial', sans-serif !important;
+    font-family: Impact, sans-serif !important;
 }
 
 *{
