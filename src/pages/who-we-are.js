@@ -9,7 +9,7 @@ import { dark_details, field, whoweare1, whoweare2, whoweare3 } from "../images"
 
 export default () =>(
     <Fragment>
-        <Nav lan="en"/>
+        <Nav lan="en" alt="/es/quienes-somos"></Nav>/>
         <DoublePicture img1={ dark_details } img2={ field }/>
         <Text 
             title="ABOUT US"
@@ -34,6 +34,7 @@ export default () =>(
                 arms and ammunition, which means that we ensure that the process of taking arms and ammunition out of service 
                 is performed correctly. A unique feature of our concept is that we have access to all the components needed for a safe, 
                 secure and environmentally-friendly disarmament process. 
+                <br/>
                 We collaborate with a number of Swedish companies which, with their broad experience and technical expertise, 
                 can contribute to the overall global need for the disarmament of conventional arms and ammunition. 
                 Together, we form a hub for a new, strong, Swedish export area with the added value of a humanitarian and 

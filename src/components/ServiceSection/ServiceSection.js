@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import classes from "./ServiceSection.module.css"
 import { background_dark } from "../../images";
 
-export default ({ title, children }) =>(
+export default ({ title, children, lan }) =>(
     <Fragment>
         <div 
             className={ classes.banner }
@@ -12,7 +12,7 @@ export default ({ title, children }) =>(
             }}
         >
             <div className={ classes.bannerContainer }>
-                <p>Module Description</p>
+                <p>{ lan === "en" ? "Module description" : "Descripción del modulo" }</p>
                 <h1>{ title }</h1>
             </div>
         </div>
@@ -20,8 +20,8 @@ export default ({ title, children }) =>(
             <div className={ classes.content }>
                 <p>{ children }</p>
                 <p>
-                    <Link to="/what-we-do">
-                        <button>BACK</button>
+                    <Link to={ lan==="en" ? "/what-we-do" : "/es/que-hacemos" }>
+                        <button>{ lan === "en" ? "SUBMIT" : "ENVIAR" }</button>
                     </Link>
                 </p>
             </div>

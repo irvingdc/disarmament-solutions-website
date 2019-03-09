@@ -6,8 +6,8 @@ import ServiceSection from "../../components/ServiceSection/ServiceSection";
 
 export default () =>(
     <Fragment>
-        <Nav lan="en"/>
-            <ServiceSection title="Marking">
+        <Nav lan="en" alt="/es/marcado"/>
+            <ServiceSection title="Marking" lan="en">
             The marking module includes different methods for the marking of material that is to be disarmed. All material needs a marking to enable individual monitoring throughout the disarmament process. Furthermore, some material might need forensic or permanent marking to facilitate tracing.
             </ServiceSection>
         <Footer/>

@@ -9,7 +9,7 @@ import { details } from "../images";
 
 export default () =>(
     <Fragment>
-        <Nav lan="en"/>
+        <Nav lan="en" alt="/es"/>
         <Gallery/>
         <Text 
             title="DISARMAMENT OF CONVENTIONAL ARMS AND AMMUNITION"

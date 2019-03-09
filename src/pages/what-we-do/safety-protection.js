@@ -6,8 +6,8 @@ import ServiceSection from "../../components/ServiceSection/ServiceSection";
 
 export default () =>(
     <Fragment>
-        <Nav lan="en"/>
-            <ServiceSection title="Safety protection">
+        <Nav lan="en" alt="/es/proteccion"/>
+            <ServiceSection title="Safety protection" lan="en">
             The safety protection module includes products and services required to counteract accidents, handle the consequences of possible accidents and ensure a safe working environment for personnel. The total solution for safety protection is designed on the basis of the defined risk profile regarding safety risks.
             </ServiceSection>
         <Footer/>

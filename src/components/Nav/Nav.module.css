@@ -63,11 +63,29 @@
     left: 15px;
     top: 15px;
 }
-@media (max-width:600px){
+.flag{
+    display: block;
+    width: 26px;
+}
+@media (max-width:767px){
     .container{
+        top: 0px;
+        left: 0px;
         position: fixed;
         padding: 5px;
         background: var(--dark);
+        height: fit-content;
+        background: white;
+        box-shadow: 0 1px 3px rgba(0,0,0,.3)
+    }
+    .content{
+        margin: 0px auto;
+        height: 60px;
+    }
+    .logo{
+        position: relative;
+        height: 50px;
+        width: auto;
     }
     :not(.open) .menuButton{
         display: block;

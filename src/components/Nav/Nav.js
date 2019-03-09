@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import classes from "./Nav.module.css"
 import NavDropdown from "../NavDropdown/NavDropdown"
-import { logo_dark, menu, close } from "../../images"
+import { logo_dark, menu, close, uk, spain } from "../../images"
 
 class Nav extends Component {
     
@@ -74,6 +74,70 @@ class Nav extends Component {
                 title: "CONTACT",
                 url: "/contact"
             },
+        ],
+        es: [
+            {
+                title: "INICIO",
+                url: "/es"
+            },
+            {
+                title: "¿QUIÉNES SOMOS?",
+                url: "/es/quienes-somos",
+            },
+            {
+                title: "¿QUÉ HACEMOS?",
+                url: "/es/que-hacemos",
+                options: [
+                    {
+                        title: "Protección al ambiente",
+                        url: "/es/que-hacemos/proteccion-al-ambiente"
+                    },
+                    {
+                        title: "Protección",
+                        url: "/es/que-hacemos/proteccion"
+                    },
+                    {
+                        title: "Reciclaje",
+                        url: "/es/que-hacemos/reciclaje"
+                    },
+                    {
+                        title: "Seguridad física",
+                        url: "/es/que-hacemos/seguridad-fisica"
+                    },
+                    {
+                        title: "Transporte",
+                        url: "/es/que-hacemos/transporte"
+                    },
+                    {
+                        title: "Mantenimiento de registros",
+                        url: "/es/que-hacemos/mantenimiento-de-registros"
+                    },
+                    {
+                        title: "Marcado",
+                        url: "/es/que-hacemos/marcado"
+                    },
+                    {
+                        title: "Almacenamiento",
+                        url: "/es/que-hacemos/almacenamiento"
+                    },
+                    {
+                        title: "Evaluación de vida",
+                        url: "/es/que-hacemos/evaluacion-de-vida"
+                    },
+                    {
+                        title: "Destrucción",
+                        url: "/es/que-hacemos/destrucción"
+                    },
+                    {
+                        title: "Gestión",
+                        url: "/es/que-hacemos/gestion"
+                    },
+                ]
+            },
+            {
+                title: "CONTACTO",
+                url: "/es/contacto"
+            },
         ]
     }
 
@@ -87,10 +151,11 @@ class Nav extends Component {
 
     render(){
         let lan = this.urls[this.props.lan]
+        let alt = this.props.alt || "/"
         return (
             <div className={ [classes.container, (this.state.open ? classes.open : "")].join(" ") }>
                 <div className={ classes.content }>
-                    <Link to="/" className={ classes.img }>
+                    <Link to={ lan[0].url } className={ classes.img }>
                         <img src={ logo_dark } alt="Logo" title="Logo" className={ classes.logo }/>
                     </Link>
                     <div className={ classes.menu }>
@@ -100,6 +165,11 @@ class Nav extends Component {
                                 : <Link activeClassName={ classes.active } to={ it.url } key={ index }>{ it.title }</Link> 
                             )
                         }
+                        <Link to={ alt }>
+                            {
+                                <img src={ this.props.lan === "es" ? uk : spain } alt="Flag" className={ classes.flag }/>
+                            }
+                        </Link>
                     </div>
                     <img src={ close } alt="close" className={ classes.close } onClick={ this.closeMenu }/>
                     <img src={ menu } alt="close" className={ classes.menuButton } onClick={ this.openMenu }/>

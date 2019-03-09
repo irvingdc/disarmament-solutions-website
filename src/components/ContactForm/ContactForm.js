@@ -25,37 +25,38 @@ export default class ContactForm extends Component{
         event.preventDefault()
     }
     render(){
+        let { contactDetails } = this.props
         let { name, phone, email, message } = this.state.form
         return (
             <div>
                 <div className={ classes.content }>
                     <form onSubmit={ this.handleSubmit }>
-                        <label>Name *</label>
+                        <label>{ contactDetails.name } *</label>
                         <input 
                             name="name"
                             onChange={ this.handleChange }
                             value={ name }
                         />
-                        <label>Organization *</label>
+                        <label>{ contactDetails.organization } *</label>
                         <input 
                             name="organization"
                             onChange={ this.handleChange }
                             value={ phone }
                         />
-                        <label>Email *</label>
+                        <label>{ contactDetails.email } *</label>
                         <input
                             name="email"
                             onChange={ this.handleChange }
                             value={ email }
                         />
-                        <label>Message *</label>
+                        <label>{ contactDetails.message } *</label>
                         <textarea 
                             name="message"
                             onChange={ this.handleChange }
                             value={ message }
                         />
                         <div className={ classes.button }>
-                            <button>SUBMIT</button>
+                            <button>{ contactDetails.submit }</button>
                         </div>
                     </form>
                 </div>

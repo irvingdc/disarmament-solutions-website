@@ -6,8 +6,8 @@ import ServiceSection from "../../components/ServiceSection/ServiceSection";
 
 export default () =>(
     <Fragment>
-        <Nav lan="en"/>
-            <ServiceSection title="Destruction">
+        <Nav lan="en" alt="/es/destriccion"/>
+            <ServiceSection title="Destruction" lan="en">
                 The destruction module includes different solutions for the destruction of weapons and ammunition, stationary and mobile. All the solutions are designed to minimise negative environmental impact and unacceptable risks for the personnel involved. 
             </ServiceSection>
         <Footer/>

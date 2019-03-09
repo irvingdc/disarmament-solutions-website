@@ -24,7 +24,7 @@ export default () =>{
     ]
     return(
         <Fragment>
-            <Nav lan="en"/>
+            <Nav lan="en" alt="/es/que-hacemos"/>
             <DoublePicture img1={ dark_details } img2={ whatwedo }/>
             <Text 
                 title="THE DISARMAMENT CONCEPT"
