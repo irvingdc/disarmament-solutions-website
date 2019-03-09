@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 export default ({ title, options, url }) =>(
     <div className={ classes.container }>
-        <Link to={ url }>{ title }</Link>
+        <Link to={ url } activeClassName={ classes.active }>{ title }</Link>
         <div className={ classes.details }>
             {
                 options.map((it, index) => <Link to={ it.url } key={ index }>{ it.title }</Link>)

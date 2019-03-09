@@ -1,0 +1,55 @@
+.banner, .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bannerContainer, .content{
+    width: calc(100% - 40px);
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+.bannerContainer *{
+    color: white;
+    text-align: left !important;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.bannerContainer p{
+    font-size: 13px;
+    padding-bottom: 6px;
+}
+.container{
+    height: unset;
+    min-height: 600px;
+    align-items: flex-start;
+    padding-top: 35px;
+}
+.content p{
+    max-width: 550px;
+    font-weight: 100;
+    font-size: 13.5px;
+    line-height: 20px;
+    padding-bottom: 80px;
+    width: 100%;
+}
+.content button{
+    float: right;
+    display: block;
+    border-radius: 0px;
+    border:none;
+    font-size: 15px;
+    padding: 12px;
+    width: 120px;
+    border: 1px solid var(--primary);
+    font-family: Impact;
+    cursor: pointer;
+    color: var(--primary);
+    transition: all 0.2s;
+    background: transparent;
+}
+.content button:hover{
+    background: var(--light-gray);
+}

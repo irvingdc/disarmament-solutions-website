@@ -9,3 +9,104 @@
 .grayTextTop strong{
     font-weight: bold;
 }
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.options > div{
+    width: fit-content;
+    position: relative;
+    padding: 0px 0px 100px;
+}
+.options a{
+    display: block;
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+.options a:nth-child(2){
+    left: 40%; /*285*/
+    top: 35%; /*285*/
+}
+.options a:nth-child(3){
+    left: 40.5%;
+    top: 4.3%;
+}
+.options a:nth-child(4){
+    left: 61%;
+    top: 10.44%;
+}
+.options a:nth-child(5){
+    left: 73.25%;
+    top: 25.5%;
+}
+.options a:nth-child(6){
+    left: 73.26%;
+    top: 44.1%;
+}
+.options a:nth-child(7){
+    left: 60.63%;
+    top: 59.34%;
+}
+.options a:nth-child(8){
+    left: 40%;
+    top: 64.74%;
+}
+.options a:nth-child(9){
+    left: 19.65%;
+    top: 59.2%;
+}
+.options a:nth-child(10){
+    left: 6.88%;
+    top: 44.1%;
+}
+.options a:nth-child(11){
+    left: 6.88%;
+    top: 25.5%;
+}
+.options a:nth-child(12){
+    left: 19.92%;
+    top: 10.44%;
+}
+.whiteText{
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px;
+    background: white;
+    padding: 20px 10px 70px;
+}
+.styledText{
+    background: url("../images/background_dark.jpg") center center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+.styledText * {
+    color: white;
+}
+.styledText h3{
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.styledText li{
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    font-style: italic;
+    list-style-type: none;
+}
+.grayTextBottom{
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px;
+    padding: 15px 10px;
+    background-color: var(--light-gray);
+}
+.finalText{
+    padding: 90px 10px 140px;
+}

@@ -1,0 +1,25 @@
+.countries{
+    margin: 80px auto 30px;
+    display: block;
+    max-width: 100%;
+}
+.address{
+    width: calc(100% - 20px);
+    max-width: 550px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.address > div{
+    width: 50%;
+    border-right: 1px solid #bbb;
+}
+.address h3{
+    line-height: 34px;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+.address p{
+    font-weight: 100;
+    line-height: 20px;
+    font-size: 13px;
+}

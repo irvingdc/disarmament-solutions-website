@@ -26,6 +26,9 @@
 .details{
     display: none;
 }
+.container .active{
+    color: var(--primary);
+}
 @media (max-width: 600px){
     .container{
         padding-bottom: 20px;

@@ -30,33 +30,33 @@ export default class ContactForm extends Component{
             <div>
                 <div className={ classes.content }>
                     <form onSubmit={ this.handleSubmit }>
+                        <label>Name *</label>
                         <input 
                             name="name"
-                            placeholder="NAME:"
                             onChange={ this.handleChange }
                             value={ name }
                         />
-                        <div className={ classes.flex }>
-                            <input 
-                                name="phone"
-                                placeholder="PHONE:"
-                                onChange={ this.handleChange }
-                                value={ phone }
-                            />
-                            <input
-                                name="email"
-                                placeholder="E-MAIL:"
-                                onChange={ this.handleChange }
-                                value={ email }
-                            />
-                        </div>
+                        <label>Organization *</label>
+                        <input 
+                            name="organization"
+                            onChange={ this.handleChange }
+                            value={ phone }
+                        />
+                        <label>Email *</label>
+                        <input
+                            name="email"
+                            onChange={ this.handleChange }
+                            value={ email }
+                        />
+                        <label>Message *</label>
                         <textarea 
                             name="message"
-                            placeholder="MESSAGE:"
                             onChange={ this.handleChange }
                             value={ message }
                         />
-                        <button>SEND MESSAGE</button>
+                        <div className={ classes.button }>
+                            <button>SUBMIT</button>
+                        </div>
                     </form>
                 </div>
             </div>

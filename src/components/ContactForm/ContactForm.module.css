@@ -1,0 +1,44 @@
+.content form{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 40px);
+    max-width: 550px;
+    margin: auto;
+}
+.content label{
+    font-weight: 100;
+    font-size: 13px;
+    padding: 20px 0px 5px;
+}
+.content input{
+    height: 15px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 100;
+    border: 1px solid #d8d8d8;
+}
+.content textarea{
+    border: 1px solid #d8d8d8;
+    resize: none;
+    height: 100px;
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0px;
+}
+.button button{
+    display: block;
+    border-radius: 0px;
+    border:none;
+    background: white;
+    font-size: 15px;
+    padding: 10px;
+    font-family: Impact;
+    cursor: pointer;
+    color: var(--primary);
+    transition: all 0.2s;
+}
+.button button:hover{
+    background: var(--light-gray);
+}

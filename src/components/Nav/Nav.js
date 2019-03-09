@@ -18,19 +18,23 @@ class Nav extends Component {
             },
             {
                 title: "WHO WE ARE",
-                url: "who-we-are",
+                url: "/who-we-are",
             },
             {
                 title: "WHAT WE DO",
-                url: "what-we-do",
+                url: "/what-we-do",
                 options: [
                     {
                         title: "Environmental protection",
-                        url: "/pages/environmenta-protection"
+                        url: "/pages/environmental-protection"
                     },
                     {
                         title: "Safety protection",
                         url: "/what-we-do/safety-protection"
+                    },
+                    {
+                        title: "Recycling",
+                        url: "/what-we-do/recycling"
                     },
                     {
                         title: "Physical security",

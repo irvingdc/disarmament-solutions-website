@@ -73,7 +73,7 @@
     font-family: 'Impact';
     font-style: normal;
     font-weight: normal;
-    src: local('Impact'), url('./fonts/impact.ttf') format('ttf');
+    src: local('Impact'), url('./fonts/impact-2.ttf') format('ttf');
 }
 
 body, html{
