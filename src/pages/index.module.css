@@ -7,11 +7,12 @@
     margin-bottom: 130px;
 }
 .details > div{
-    width: 330px;
+    max-width: 330px;
     height: 330px;
     margin: 0px 15px;
     display: block;
     background: var(--primary);
+    width: calc(100% - 20px);
 }
 .details h3{
     font-size: 32px;
@@ -34,7 +35,16 @@
 .details img{
     position: absolute;
     bottom: 25px;
-    width: 290px;
+    width: calc(100% - 40px);
     left: 20px;
     height: auto;
+}
+@media (max-width: 1000px){
+    .details{
+        flex-direction: column;
+        align-items: center;
+    }
+    .details > div{
+        margin: 10px 15px;
+    }
 }

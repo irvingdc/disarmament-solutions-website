@@ -6,7 +6,7 @@ import ServiceSection from "../../components/ServiceSection/ServiceSection";
 
 export default () =>(
     <Fragment>
-        <Nav lan="en" alt="/es/evaluacion-de-vida"/>
+        <Nav lan="en" alt="/es/que-hacemos/evaluacion-de-vida"/>
             <ServiceSection title="Lifetime assessment" lan="en">
             The lifetime assessment module includes different solutions to determine the status and condition of the material that is to be disarmed as well as critical input values needed to design safe work processes. For material containing explosives, the remaining lifetime is also evaluated to determine how long it can be stored before becoming unstable. 
             </ServiceSection>

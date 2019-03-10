@@ -13,20 +13,20 @@ class Nav extends Component {
     urls = {
         en: [
             {
-                title: "HOME",
+                title: "Home",
                 url: "/"
             },
             {
-                title: "WHO WE ARE",
+                title: "Who we are",
                 url: "/who-we-are",
             },
             {
-                title: "WHAT WE DO",
+                title: "What we do",
                 url: "/what-we-do",
                 options: [
                     {
                         title: "Environmental protection",
-                        url: "/pages/environmental-protection"
+                        url: "/what-we-do/environmental-protection"
                     },
                     {
                         title: "Safety protection",
@@ -71,21 +71,21 @@ class Nav extends Component {
                 ]
             },
             {
-                title: "CONTACT",
+                title: "Contact",
                 url: "/contact"
             },
         ],
         es: [
             {
-                title: "INICIO",
+                title: "Inicio",
                 url: "/es"
             },
             {
-                title: "¿QUIÉNES SOMOS?",
+                title: "¿Quiénes somos?",
                 url: "/es/quienes-somos",
             },
             {
-                title: "¿QUÉ HACEMOS?",
+                title: "¿Que hacemos?",
                 url: "/es/que-hacemos",
                 options: [
                     {
@@ -135,7 +135,7 @@ class Nav extends Component {
                 ]
             },
             {
-                title: "CONTACTO",
+                title: "Contacto",
                 url: "/es/contacto"
             },
         ]
@@ -165,7 +165,7 @@ class Nav extends Component {
                                 : <Link activeClassName={ classes.active } to={ it.url } key={ index }>{ it.title }</Link> 
                             )
                         }
-                        <Link to={ alt }>
+                        <Link to={ alt } className={ classes.language }>
                             {
                                 <img src={ this.props.lan === "es" ? uk : spain } alt="Flag" className={ classes.flag }/>
                             }

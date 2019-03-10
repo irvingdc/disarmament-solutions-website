@@ -48,6 +48,7 @@
     transition: all 0.2s;
     font-family: Impact;
     color: var(--secondary);
+    text-transform: uppercase;
 }
 .container a:hover{
     color: var(--gray) ;
@@ -57,11 +58,18 @@
 }
 .menuButton, .close{
     display: none;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     position: fixed;
-    left: 15px;
-    top: 15px;
+    right: 20px;
+    top: 18px;
+    cursor: pointer;
+}
+.close{
+    right: 22px;
+    width: 25px;
+    height: 25px;
+    top: 24px;
 }
 .flag{
     display: block;
@@ -106,21 +114,44 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: center;
-        padding: 40px;
+        justify-content: flex-start;
+        padding: 0px;
         left: -1000px;
         top: 0px;
-        width: 100vw;
-        min-height: calc(100vh - 40px);
-        background: var(--dark);
+        width: calc(100vw - 60px);
+        height: 100%;
+        overflow: auto;
+        border-right: 1px solid #999;
+        box-shadow: 2px 0 9px rgba(0,0,0,.5);
+        background: white;
         transition: all 0.2s;
         opacity: 0;
+        z-index: 1000;
     }
     .container .menu a{
-        padding: 10px 5px 0px 5px;
+        font-family: Helvetica, Arial, sans-serif;
+        padding: 15px 15px;
+        border-top: 1px solid #dedede;
+        width: calc(100% - 30px);
+        text-transform: initial;
+        font-weight: normal;
+        color: var(--secondary) !important;
+    }
+    .active{
+        background: var(--light-gray);
+        font-weight: bold !important;
     }
     .open .menu{
         left: 0px;
         opacity: 1;
+    }
+    .language{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        padding: 35px 15px !important;
+    }
+    .language img{
+        height: auto;
     }
 }

@@ -29,14 +29,21 @@
 .container .active{
     color: var(--primary);
 }
-@media (max-width: 600px){
+@media (max-width: 767px){
     .container{
-        padding-bottom: 20px;
+        width: 100%;
     }
     .container > div{
         position: relative;
-    }.container a{
-        padding: 5px;
+        padding: 0px !important;
+    }
+    .active{
+        background: var(--light-gray);
+        font-weight: bold !important;
+    }
+    .container a{
+        padding: 15px 40px !important;
+        width: calc(100% - 80px) !important;
         color: var(--primary);
     }
     .container > div{
@@ -46,5 +53,21 @@
     }
     .details{
         display: block;
+        left: 0px !important;
+        width: 100% !important;
+    }
+    .container a.sub{
+        padding: 15px 15px !important;
+        width: calc(100% - 30px) !important;
+    }
+    .drop{
+        content: '';
+        width: 0px;
+        height: 0px;
+        border: 10px solid transparent;
+        border-top: 10px solid black;
+        position: absolute;
+        right: 20px;
+        top: 21px;
     }
 }

@@ -91,6 +91,7 @@
 .styledText h3{
     font-size: 24px;
     letter-spacing: 1px;
+    text-align: center;
 }
 .styledText li{
     font-weight: 100;
@@ -109,4 +110,52 @@
 }
 .finalText{
     padding: 90px 10px 140px;
+}
+@media (max-width: 765px){
+    .options{
+        padding-top: 20px;
+    }
+    .options > div{
+        padding: 0px;
+    }
+    .options img{
+        width: 350px;
+    }
+    .options a{
+        width: 72px;
+        height: 72px;
+    }
+    .options a:nth-child(2){
+        top: 39%;
+    }
+    .options a:nth-child(3){
+        top: 4.3%;
+    }
+    .options a:nth-child(4){
+        top: 10.44%;
+    }
+    .options a:nth-child(5){
+        top: 28.5%;
+    }
+    .options a:nth-child(6){
+        top: 49.1%;
+    }
+    .options a:nth-child(7){
+        top: 66.34%;
+    }
+    .options a:nth-child(8){
+        top: 72.74%;
+    }
+    .options a:nth-child(9){
+        top: 66.2%;
+    }
+    .options a:nth-child(10){
+        top: 49.1%;
+    }
+    .options a:nth-child(11){
+        top: 28.5%;
+    }
+    .options a:nth-child(12){
+        top: 10.44%;
+    }
 }

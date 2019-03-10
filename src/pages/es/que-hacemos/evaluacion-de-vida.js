@@ -6,7 +6,7 @@ import ServiceSection from "../../../components/ServiceSection/ServiceSection";
 
 export default () =>(
     <Fragment>
-        <Nav lan="es" alt="/lifetime-assessment"/>
+        <Nav lan="es" alt="/what-we-do/lifetime-assessment"/>
             <ServiceSection title="Evaluaciones de vida" lan="es">
             Este módulo incluye diferentes soluciones para determinar el estatus y condición del material que se desarmará así como los puntos críticos necesarios para el diseño de procesos seguros. Para materiales que contienen explosivos: la vida restante también es evaluada para determinar cuanto tiempo puede permanecer en resguardo sin volverse inestable. 
             </ServiceSection>
