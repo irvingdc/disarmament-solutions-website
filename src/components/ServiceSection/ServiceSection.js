@@ -21,7 +21,7 @@ export default ({ title, children, lan }) =>(
                 <p>{ children }</p>
                 <p>
                     <Link to={ lan==="en" ? "/what-we-do" : "/es/que-hacemos" }>
-                        <button>{ lan === "en" ? "SUBMIT" : "ENVIAR" }</button>
+                        <button>{ lan === "en" ? "BACK" : "ATRÁS" }</button>
                     </Link>
                 </p>
             </div>

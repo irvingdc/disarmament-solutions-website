@@ -5,7 +5,7 @@ import Footer from "../components/Footer/Footer";
 import Text from "../components/Text/Text";
 import DoublePicture from "../components/DoublePicture/DoublePicture";
 import classes from "./what-we-do.module.css"
-import { dark_details, whatwedo, alloptions } from "../images";
+import { background_dark, whatwedo, alloptions } from "../images";
 import "../main.module.css"
 
 export default () =>{
@@ -25,7 +25,7 @@ export default () =>{
     return(
         <Fragment>
             <Nav lan="en" alt="/es/que-hacemos"/>
-            <DoublePicture img1={ dark_details } img2={ whatwedo }/>
+            <DoublePicture img1={ background_dark } img2={ whatwedo }/>
             <Text 
                 title="THE DISARMAMENT CONCEPT"
                 subtitle="FOR THE FINAL LIFE CYCLE PHASE"

@@ -5,12 +5,12 @@ import "../../main.module.css"
 import Gallery from "../../components/Gallery/Gallery";
 import Text from "../../components/Text/Text";
 import classes from "../index.module.css"
-import { details } from "../../images";
+import { details_es } from "../../images";
 
 export default () =>(
     <Fragment>
         <Nav lan="es" alt="/"/>
-        <Gallery/>
+        <Gallery lan="es"/>
         <Text 
             title="DESARME DE ARMAS Y MUNICIONES CONVENCIONALES"
             subtitle="POR DISARMAMENT SOLUTIONS"
@@ -27,17 +27,17 @@ export default () =>(
             <div>
                 <h3>PROTECCIÓN</h3>
                 <p>El riesgo de seguridad asociado con el hecho de que el envejecimiento de explosivos provoca que sean menos estables y causa explosiones imprevistas que incrementan el riesgo de accidentes severos durante su manejo. Las explosiones imprevistas han ocurrido en alrededor de 100 países durante los últimos 35 años.</p>
-                <img src={ details } alt="details"/>
+                <img src={ details_es } alt="details"/>
             </div>
             <div>
                 <h3>SEGURIDAD</h3>
                 <p>Existen más de un billón de armas de fuego. Los riesgos de seguridad son que las armas de fuego y explosivos pueden caer en manos equivocadas y ser utilizadas para propósitos terroristas o criminales.</p>
-                <img src={ details } alt="details"/>
+                <img src={ details_es } alt="details"/>
             </div>
             <div>
                 <h3>ENTORNO</h3>
                 <p>Las armas de fuego, municiones y explosivos contienen sustancias tóxicas y metales pesados. La destrucción a través de incendio o detonación al aire abierto conlleva daños irreversibles al aire, agua y tierra.</p>
-                <img src={ details } alt="details"/>
+                <img src={ details_es } alt="details"/>
             </div>
         </div>
         <Footer/>

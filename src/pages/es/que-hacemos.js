@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import Text from "../../components/Text/Text";
 import DoublePicture from "../../components/DoublePicture/DoublePicture";
 import classes from "../what-we-do.module.css"
-import { dark_details, whatwedo, alloptions } from "../../images";
+import { background_dark, whatwedo, alloptions_es } from "../../images";
 import "../../main.module.css"
 
 export default () =>{
@@ -25,7 +25,7 @@ export default () =>{
     return(
         <Fragment>
             <Nav lan="es" alt="/what-we-do"/>
-            <DoublePicture img1={ dark_details } img2={ whatwedo }/>
+            <DoublePicture img1={ background_dark } img2={ whatwedo }/>
             <Text 
                 title="EL CONCEPTO DE DESARME"
                 subtitle="PARA LA FASE FINAL DEL CICLO DE VIDA"
@@ -46,7 +46,7 @@ export default () =>{
             </p>
             <div className={ classes.options }>
                 <div>
-                    <img src={ alloptions } alt="Services"/>
+                    <img src={ alloptions_es } alt="Services"/>
                     {
                         urls.map((url, index) => <Link to={ url } key={ index }/>)
                     }

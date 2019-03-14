@@ -6,7 +6,7 @@ import Text from "../../components/Text/Text";
 import DoublePicture from "../../components/DoublePicture/DoublePicture";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import classes from "../contact.module.css"
-import { dark_details, contact, countries } from "../../images";
+import { background_dark, contact, countries } from "../../images";
 
 export default () =>{
     let contactDetails={
@@ -19,10 +19,10 @@ export default () =>{
     return (
         <Fragment>
             <Nav lan="es" alt="/contact"/>
-            <DoublePicture img1={ dark_details } img2={ contact }/>
+            <DoublePicture img1={ background_dark } img2={ contact }/>
             <Text 
                 title="CONTACTO"
-                subtitle="AQUI ESTAMOS PARA RESPONDER TUS PREGUNTAS ACERCA DE CONCEPTOS DE DESARMAMENTO"
+                subtitle="AQUI ESTAMOS PARA RESPONDER TUS PREGUNTAS ACERCA DE CONCEPTOS DE DESARME"
             />
             <div className={ classes.address }>
                 <div>
@@ -41,7 +41,7 @@ export default () =>{
             </div>
             <ContactForm contactDetails={ contactDetails }/>
             <img src={ countries } alt="countries" className={ classes.countries }/>
-            <Footer/>
+            <Footer lan="es"/>
         </Fragment>
     )
 }

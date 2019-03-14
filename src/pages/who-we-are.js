@@ -5,12 +5,12 @@ import DoublePicture from "../components/DoublePicture/DoublePicture";
 import Text from "../components/Text/Text";
 import classes from "./who-we-are.module.css"
 import "../main.module.css"
-import { dark_details, field, whoweare1, whoweare2, whoweare3 } from "../images";
+import { dark_details, background_dark, field, whoweare1, whoweare2, whoweare3 } from "../images";
 
 export default () =>(
     <Fragment>
         <Nav lan="en" alt="/es/quienes-somos"></Nav>/>
-        <DoublePicture img1={ dark_details } img2={ field }/>
+        <DoublePicture img1={ background_dark } img2={ field }/>
         <Text 
             title="ABOUT US"
             subtitle="A SWEDISH INITIATIVE"

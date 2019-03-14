@@ -10,7 +10,7 @@ import { details } from "../images";
 export default () =>(
     <Fragment>
         <Nav lan="en" alt="/es"/>
-        <Gallery/>
+        <Gallery lan="en"/>
         <Text 
             title="DISARMAMENT OF CONVENTIONAL ARMS AND AMMUNITION"
             subtitle="BY DISARMAMENT SOLUTIONS"
@@ -40,6 +40,6 @@ export default () =>(
                 <img src={ details } alt="details"/>
             </div>
         </div>
-        <Footer/>
+        <Footer lan="en"/>
     </Fragment>
 )
