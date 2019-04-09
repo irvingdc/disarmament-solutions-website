@@ -29,7 +29,7 @@
 			"Content-Type: text/html; charset=UTF-8"
 		);
 		$headers = implode("\r\n", $headers);
-		$to = "iedc@outlook.com";
+		$to = "info@disarmamentsolutions.com";
 		mail($to, $title, $content, $headers);
     }
     
