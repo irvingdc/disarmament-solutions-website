@@ -40,13 +40,13 @@
     font-size: 15px;
     padding: 12px;
     width: 120px;
-    border: 1px solid var(--primary);
+    border: 1px solid #32585c;
     font-family: Impact;
     cursor: pointer;
-    color: var(--primary);
+    color: #32585c;
     transition: all 0.2s;
     background: transparent;
 }
 .content button:hover{
-    background: var(--light-gray);
+    background: #eeeeee;
 }

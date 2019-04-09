@@ -45,14 +45,14 @@
     position: relative;
     transition: all 0.2s;
     font-family: Impact;
-    color: var(--secondary);
+    color: #333333;
     text-transform: uppercase;
 }
 .container a:hover{
-    color: var(--gray) ;
+    color: #6e6e6e ;
 }
 .container .active{
-    color: var(--primary);
+    color: #32585c;
 }
 .menuButton, .close{
     display: none;
@@ -133,10 +133,10 @@
         width: calc(100% - 30px);
         text-transform: initial;
         font-weight: normal;
-        color: var(--secondary) !important;
+        color: #333333 !important;
     }
     .active{
-        background: var(--light-gray);
+        background: #eeeeee;
         font-weight: bold !important;
     }
     .open .menu{

@@ -25,6 +25,10 @@
     justify-content: flex-end;
     padding: 20px 0px;
 }
+.content input:focus, .content textarea:focus{
+    outline: none;
+    box-shadow: 0px 0px 4px 0px #0090ff;
+}
 .button button{
     display: block;
     border-radius: 0px;
@@ -34,9 +38,13 @@
     padding: 10px;
     font-family: Impact;
     cursor: pointer;
-    color: var(--primary);
+    color: #32585c;
     transition: all 0.2s;
+    outline: none;
 }
 .button button:hover{
-    background: var(--light-gray);
+    background: #eeeeee;
+}
+.invalid{
+    box-shadow: 0px 0px 3px 1px red;
 }

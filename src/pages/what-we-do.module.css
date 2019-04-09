@@ -2,7 +2,7 @@
     margin-top: 30px;
     padding: 50px 30px 80px;
     text-align: center;
-    background-color: var(--light-gray);
+    background-color: #eeeeee;
     font-size: 15px;
 }
 .grayTextTop strong{
@@ -101,7 +101,7 @@
     text-align: center;
     font-size: 15px;
     padding: 15px 10px;
-    background-color: var(--light-gray);
+    background-color: #eeeeee;
 }
 .finalText{
     padding: 90px 10px 140px;

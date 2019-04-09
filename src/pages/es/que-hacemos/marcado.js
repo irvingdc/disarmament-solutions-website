@@ -1,15 +1,25 @@
-import React, { Fragment } from "react"
+import React, { Fragment } from "react";
 import Nav from "../../../components/Nav/Nav";
 import Footer from "../../../components/Footer/Footer";
-import "../../../main.module.css"
+import "../../../main.module.css";
 import ServiceSection from "../../../components/ServiceSection/ServiceSection";
 
-export default () =>(
-    <Fragment>
-        <Nav lan="es" alt="/what-we-do/marking"/>
-            <ServiceSection title="Marcado" lan="es">
-                Este módulo incluye diferentes métodos para el marcado del material que se desarmará. Todos los materiales necesitan un marcado para habilitar un monitoreo individual durante el proceso de desarme. Además, algunos tipos de material necesitan un marcado forense o permanente (especial) para facilitar su rastreo. 
-            </ServiceSection>
-        <Footer/>
-    </Fragment>
-)
+export default () => (
+  <Fragment>
+    <Nav
+      lan="es"
+      alt="/what-we-do/marking"
+      title="Disarmament Solutions | Que Hacemos - Marcado"
+      canonical="https://www.disarmamentsolutions.com/es/que-hacemos/marcado"
+      description="Este módulo incluye diferentes métodos para el marcado del material que se desarmará."
+    />
+    <ServiceSection title="Marcado" lan="es">
+      Este módulo incluye diferentes métodos para el marcado del material que se
+      desarmará. Todos los materiales necesitan un marcado para habilitar un
+      monitoreo individual durante el proceso de desarme. Además, algunos tipos
+      de material necesitan un marcado forense o permanente (especial) para
+      facilitar su rastreo.
+    </ServiceSection>
+    <Footer />
+  </Fragment>
+);

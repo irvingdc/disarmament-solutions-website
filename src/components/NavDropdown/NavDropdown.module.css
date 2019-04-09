@@ -7,7 +7,7 @@
     font-size: 15px;
 }
 .container:hover h3{
-    color: var(--primary);
+    color: #32585c;
 }
 .container > div{
     opacity: 0;
@@ -25,7 +25,7 @@
     display: none;
 }
 .container .active{
-    color: var(--primary);
+    color: #32585c;
 }
 @media (max-width: 767px){
     .container{
@@ -36,13 +36,13 @@
         padding: 0px !important;
     }
     .active{
-        background: var(--light-gray);
+        background: #eeeeee;
         font-weight: bold !important;
     }
     .container a{
         padding: 15px 40px !important;
         width: calc(100% - 80px) !important;
-        color: var(--primary);
+        color: #32585c;
     }
     .container > div{
         visibility: visible;
