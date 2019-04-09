@@ -1,7 +1,7 @@
 .container{
     padding: 60px 40px 90px;
     width: calc(100% - 80px);
-    background: var(--primary);
+    background: #32585c;
 }
 .content{
     width: calc(100% - 40px);

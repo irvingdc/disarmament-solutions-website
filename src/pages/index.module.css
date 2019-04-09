@@ -11,7 +11,7 @@
     height: 330px;
     margin: 0px 15px;
     display: block;
-    background: var(--primary);
+    background: #32585c;
     width: calc(100% - 20px);
 }
 .details h3{
