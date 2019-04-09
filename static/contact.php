@@ -1,7 +1,6 @@
 <?php
 	header('Access-Control-Allow-Origin: *');
 	header("Access-Control-Allow-Headers: Content-Type");
-	require_once('./mail/class.phpmailer.php');
 		
 	if(!isset($_POST['email'])) die("Forbidden.");
 
