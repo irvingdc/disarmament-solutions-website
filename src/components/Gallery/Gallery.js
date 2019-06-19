@@ -79,7 +79,7 @@ export default class MyComponent extends Component {
                     lazyLoad
                     autoPlay
                     slideDuration={ 600 }
-                    slideInterval={ 2500 }
+                    slideInterval={ 3500 }
                 />
             </div>
         </div>

@@ -59,9 +59,9 @@ export default () => (
       </p>
     </Text>
     <div className={classes.triplePicture}>
-      <img alt="Who we are" src={whoweare1} />
-      <img alt="Who we are" src={whoweare2} />
-      <img alt="Who we are" src={whoweare3} />
+      <img alt="Who we are" src={whoweare1} alt="who-we-are 1"/>
+      <img alt="Who we are" src={whoweare2} alt="who-we-are 2"/>
+      <img alt="Who we are" src={whoweare3} alt="who-we-are 2"/>
     </div>
     <p className={classes.imageLabel}>
       Nuestros conceptos son diseñados para cumplir con los puntos establecidos

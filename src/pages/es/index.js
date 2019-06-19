@@ -52,7 +52,7 @@ export default () => (
           manejo. Las explosiones imprevistas han ocurrido en alrededor de 100
           países durante los últimos 35 años.
         </p>
-        <img src={details_es} alt="details" />
+        <img src={details_es} alt="details 1" />
       </div>
       <div>
         <h3>SEGURIDAD</h3>
@@ -61,7 +61,7 @@ export default () => (
           son que las armas de fuego y explosivos pueden caer en manos
           equivocadas y ser utilizadas para propósitos terroristas o criminales.
         </p>
-        <img src={details_es} alt="details" />
+        <img src={details_es} alt="details 2" />
       </div>
       <div>
         <h3>ENTORNO</h3>
@@ -71,7 +71,7 @@ export default () => (
           detonación al aire abierto conlleva daños irreversibles al aire, agua
           y tierra.
         </p>
-        <img src={details_es} alt="details" />
+        <img src={details_es} alt="details 3" />
       </div>
     </div>
     <Footer />

@@ -50,7 +50,7 @@ export default () => (
           risk of severe accidents during handling. Unplanned explosions have
           occurred in 100 countries over the last 35 years.
         </p>
-        <img src={details} alt="details" />
+        <img src={details} alt="details 1" />
       </div>
       <div>
         <h3>SECURITY</h3>
@@ -59,7 +59,7 @@ export default () => (
           risk is that weapons and explosives may fall into the wrong hands and
           be used for antagonistic purposes by terrorists or criminal groups.
         </p>
-        <img src={details} alt="details" />
+        <img src={details} alt="details 2" />
       </div>
       <div>
         <h3>ENVIRONMENT</h3>
@@ -68,7 +68,7 @@ export default () => (
           heavy metals. Destruction by open burning or open detonation will lead
           to irreversible consequences for air, ground water and soil.
         </p>
-        <img src={details} alt="details" />
+        <img src={details} alt="details 3" />
       </div>
     </div>
     <Footer lan="en" />

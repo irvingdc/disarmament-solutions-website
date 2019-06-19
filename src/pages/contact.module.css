@@ -5,12 +5,15 @@
 }
 .address{
     width: calc(100% - 20px);
+    display: flex;
     max-width: 550px;
     margin: auto;
     padding-bottom: 50px;
 }
 .address > div{
     width: 50%;
+}
+.address > div:first-child{
     border-right: 1px solid #bbb;
 }
 .address h3{
@@ -21,6 +24,19 @@
 .address p{
     line-height: 20px;
     font-size: 13px;
+}
+.address > div:nth-child(2){
+    padding: 0px 20px;
+}
+.address > div a{
+    text-decoration: none;
+    color: #32585c;
+    font-weight: bold;
+    line-height: 34px;
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-family: Impact, sans-serif !important;
+    display: block;
 }
 @media (max-width: 600px){
     .address > div{

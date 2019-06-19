@@ -48,6 +48,16 @@ export default () => {
             SWEDEN
           </p>
         </div>
+        <div>
+          <a
+            rel="noopener noreferrer"
+            href="https://www.swedishnet.se/es/"
+            target="_blank"
+          >
+            Swedish Net Group
+          </a>
+          <p>Disarmament Solutions es parte del grupo Swedish Net. </p>
+        </div>
       </div>
       <ContactForm contactDetails={contactDetails} />
       <img src={countries} alt="countries" className={classes.countries} />
