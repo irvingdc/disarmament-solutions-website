@@ -9,7 +9,7 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "domready": "^1.0.8",
     "eventbusjs": "^0.2.0",
     "gatsby": "^2.3.16",
